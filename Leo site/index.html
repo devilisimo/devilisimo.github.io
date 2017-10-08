@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Leo</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			function valid() {
+				var state = $("input[name='text']:checked").val();
+				if(!state) return $("#message").html("<font style='color:red'> Укажите Адрес или пароль</font> ");
+			}
+		</script>
+	</head>
+	<body>
+			<div id="wrapper">
+				<div id="header">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo.png" alt="logotip"/></a>
+					</div>
+					<div id="menu">
+						<ul>
+							<li><a href="#">Solutions</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="banner">
+					<img src="images/icon.png"/>
+					<ul>
+						<li>Introducing</li>
+						<li>Something hot.....</li>
+						<li>
+							<div id="button"><a href="#">Try Demo</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<div id="osnova">
+					<div class="icon">
+						<img src="images/icon1.png"/>
+						<p>Responsive<br/> Websites</p>
+					</div>
+					<div class="icon">
+						<img src="images/icon2.png"/>
+						<p>e Commerce<br/> Websites</p>
+					</div>
+					<div class="icon">
+						<img src="images/icon3.png"/>
+						<p>Daily blog<br/> Websites</p>
+					</div>
+					<div class="icon">
+						<img src="images/icon4.png"/>
+						<p>Search based <br/>Websites</p>
+					</div>
+					<div id="ipad">
+						<img src="images/ipad.png"/>
+						<h2>Lorem Ipsum is simply dummy text</h2>
+						<p id="top">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+						<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+				</div>
+					<div class="best">
+						<img id="gi" src="images/screen.png"/>
+						<h3>Why choose us ?</h3>
+						<ul>
+							<li><img src="images/gal.png"/>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
+							<li><img src="images/gal.png"/>Lorem Ipsum has been the industry's standard dummy text ever</li>
+							<li><img src="images/gal.png"/>When an unknown printer took a galley of type and scrambled</li>
+							<li><img src="images/gal.png"/>It has survived not only five centuries, but also the leap into electronic </li>
+							<li><img src="images/gal.png"/>It was popularised in the 1960s with the release of Letraset sheets containing</li>
+							<li><img src="images/gal.png"/>More recently with desktop publishing software like Aldus PageMaker </li>
+						</ul>
+					</div>
+				<div id="form">
+					<div class="login">
+						<form>
+							<p>Member login</p>
+							<input type="text" name="text" value="User name"/>
+							<input id="right" type="text" name="text" value="Password"/>
+							<input type="image" onclick="return valid (); reload false" src="images/login.png"/><br/>
+							<span id="message"></span>
+						</form>
+					</div>
+					<div class="subsribe">
+						<form>
+							<p>Subscribe to our weekly newsletter</p>
+							<input type="text" value="User name"/>
+							<input type="image" src="images/subscribe.png"/>
+						</form>				
+					</div>
+				</div>
+			</div>
+			<div id="footer_bg">
+				<div id="footer">
+					<div class="about">
+						<h4>About Us</h4>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Why us</a></li>
+							<li><a href="#">Customer Stories</a></li>
+							<li><a href="#">Press Resources</a></li>
+							<li><a href="#">Press Releases</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="about">
+						<h4>About Us</h4>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Why us</a></li>
+							<li><a href="#">Customer Stories</a></li>
+							<li><a href="#">Press Resources</a></li>
+							<li><a href="#">Press Releases</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+					<div id="footer-logo">
+						<img src="images/footer_logo.png"/>
+						<div id="testimo">
+						<h4>Testimoanials</h4>
+						<ul>
+							<li><p>Lorem Ipsum is simply dummy text of the printing and 
+								typesetting industry. Lorem Ipsum has been the industr
+								standard dummy text ever since the 1500s, 
+								when an unknown printer took a </p></li>
+							<li><p id="bold">Lorem Ipsum is simply <br/>Owner, Lorem Ipsum</p></li>
+						</ul>
+					</div>
+					<p id="cop">&copy; cssauthor.com</p>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

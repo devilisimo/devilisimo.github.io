@@ -1,0 +1,335 @@
+@import url(reset.css);
+@font-face {
+	font-family: Segoe;
+	src: url(../fonts/Segoe_WP_Light.ttf);
+}
+body {
+	background: url(../images/bg.png) no-repeat;
+	background-size: 100%;
+	font-family: Segoe; 
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h4 {
+	font-size: 22px;
+	color: #fff;
+	padding-bottom: 19px;
+}
+
+#wrapper, #content, #footer {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#header {
+	overflow: hidden;
+}
+
+#logo {
+	width: 222px;
+	height: 75px;
+	margin-top: 58px;
+	margin-left: 89px;
+	float: left;
+}
+
+#menu {
+	padding-top: 56px;
+	float: right;
+}
+
+#menu li{
+	float: left;
+}
+
+#menu a {
+	padding-right: 53px;
+	font-size: 22px;
+	font-family: Segoe;
+
+}
+
+#banner {
+	margin-top: 66px;
+	margin-left: 119px;
+	float: left;
+}
+
+#banner {
+	overflow: hidden;
+}
+
+#banner ul {
+	margin-left: 72px;
+	float:right;
+}
+
+#banner li {
+	font: 44px Segoe;
+	color: #fff;
+}
+#banner ul li:first-child {
+	font-size: 64px;
+	font-family: Corbel;
+	color: #fff;
+}
+
+#button a {
+	display: block;
+	margin-top: 28px;
+	width: 136px;
+	height: 40px;
+	background: #185c3b;
+	font-size: 22px;
+	padding: 4px 0 5px 22px;
+	box-sizing: border-box;
+	opacity: 0.8;
+}
+
+#button a:hover {
+	background: #155034;
+	text-decoration: none;
+}
+
+#osnova {
+	background: url(../images/bg2.png) no-repeat;
+	width: 1024px;
+	height: 1092px;
+	margin-top: 28px;
+}
+
+.icon {
+	padding-top: 28px;
+	padding-left: 127px;
+	float: left;
+}
+
+.icon p {
+	font-family: Segoe;
+	color: #5c5b5b;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 23px;
+}
+
+.icon:first-child {
+	padding-left: 0;
+	margin-left: 50px;
+}
+
+#ipad img {
+	padding-top: 102px;
+	margin: 0 155px;
+}
+
+#ipad h2 {
+	font-size: 38px;
+	color: #4f4f4f;
+	padding-left: 55px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+#top {
+	margin-bottom: 32px;
+}
+
+#ipad p {
+	font-size: 16px;
+	color: #818181;
+	padding-left: 57px;
+	padding-right: 73px;
+}
+
+.best {
+	margin-top: 27px;
+	padding-bottom: 72px;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#gi {
+	float:left;
+	margin-right: 43px;
+	
+}
+
+.best img {
+	margin-right: 6px;
+}
+
+.best h3 {
+	font-size: 32px;
+	color: #4f4f4f;
+	margin-bottom: 27px;
+}
+
+.best ul li {
+	float: left;
+	padding-bottom: 19px;
+}
+
+#form {
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+
+.login form {
+	margin-top: 23px;
+	width: 469px;
+	height: 110px;
+	border-radius: 10px;
+	background: #e67624;
+	position: relative;
+	float: left;
+}
+
+.login form p {
+	font-size: 28px;
+	font-family: Segoe;
+	color: #fff;
+	margin-left: 27px;
+	padding-top: 13px;
+}
+
+.login input {
+	border: none;
+	height: 29px;
+	width: 145px;
+	background: #e8e8e8;
+	color: #595959;
+	font-size: 16px;
+	padding-left: 10px;
+	margin-left: 27px;
+	margin-top: 11px;
+}
+
+#right {
+	margin-left: 14px;
+}
+
+
+.login input[type="image"] {
+	position: absolute;
+	bottom: 10px;
+	right: 7px;
+	margin-bottom: 17px;
+	width: 94px;
+	height: 30px;
+	float: right;
+	padding-left: 0;
+	outline: 0;
+}
+
+.subsribe form {
+	margin-right: 19px;
+	margin-top: 23px;
+	width: 469px;
+	height: 110px;
+	border-radius: 10px;
+	background: #01d4f3;
+	position: relative;
+	float: right;
+}
+
+.subsribe form p {
+	font-size: 28px;
+	font-family: Segoe;
+	color: #fff;
+	margin-left: 27px;
+	padding-top: 13px;
+}
+
+.subsribe input {
+	border: none;
+	height: 29px;
+	width: 264px;
+	background: #e8e8e8;
+	color: #595959;
+	font-size: 16px;
+	padding-left: 10px;
+	margin-left: 27px;
+	margin-top: 12px;
+}
+
+.subsribe input[type="image"] {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	margin-bottom: 17px;
+	width: 111px;
+	height: 30px;
+	float: right;
+	padding-left: 0;
+	outline: 0;
+}
+
+#footer_bg {
+	background: url(../images/footer_bg.png);
+	height: 245px;
+}
+
+#footer {
+	padding-top: 20px;
+
+}
+
+.about {
+	margin: 0 45px;
+	float: left;
+}
+
+.about li {
+	padding-bottom: 8px;
+}
+
+.about a, #testimo  {
+	color: #919191;
+}
+
+#testimo {
+	overflow: hidden;
+}
+
+#testimo li {
+	color: #919191;
+	float: left;
+}
+
+#testimo li p {
+	margin-bottom: 10px;
+	line-height: 23px;
+}
+
+#bold {
+	font-weight: bold;
+	color: #c7c7c7;
+}
+
+#footer-logo {
+	overflow: hidden;
+}
+
+#footer-logo img {
+	padding-top: 43px;
+	float: right;
+}
+
+#cop {
+	font: 13px Arial;
+	color: #c7c7c7;
+	float: right;
+	margin-right: 140px;
+}
+
+
+
