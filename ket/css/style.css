@@ -26,18 +26,7 @@
 	src: url(../fonts/Raleway/Raleway-Thin.ttf);
 	font-family: Raleway;
 }
-@font-face {
-	src: url(../fonts/fontawesome/fontawesome-webfont.ttf);
-	font-family: fontawesome;
-}
-@font-face {
-	src: url(../fonts/fontawesome/fontawesome-webfont.woff);
-	font-family: fontawesome;
-}
-@font-face {
-	src: url(../fonts/fontawesome/fontawesome-webfont.woff2);
-	font-family: fontawesome;
-}
+
 html, body {
 	height: 100%;
 }
@@ -1038,17 +1027,21 @@ body {
 	cursor: text;
 }
 .input:focus ~ .input_label {
-  top: -15px;
-  font-size: 14px;
-  color: #00e1ff;
-  left: 15px;
+	top: -15px;
+	font-size: 14px;
+	color: #00e1ff;
+	left: 15px;
 }
 .input:required:valid ~ .input_label {
 	top: -15px;
-  font-size: 14px;
-  color: #00e1ff;
-  left: 15px;
+	font-size: 14px;
+	color: #00e1ff;
+	left: 15px;
 }
+/*.input:invalid:not(:focus):not(:placeholder-shown) ~ .input_label{
+      color: red;
+      top: -15px;		/*недовалидность*/
+    }*/
 .input_design {
   position: relative;
   display: block;
