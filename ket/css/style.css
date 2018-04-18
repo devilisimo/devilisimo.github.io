@@ -1043,6 +1043,12 @@ body {
   color: #00e1ff;
   left: 15px;
 }
+.input:required:valid ~ .input_label {
+	top: -15px;
+  font-size: 14px;
+  color: #00e1ff;
+  left: 15px;
+}
 .input_design {
   position: relative;
   display: block;
