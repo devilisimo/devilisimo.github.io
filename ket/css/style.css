@@ -26,7 +26,18 @@
 	src: url(../fonts/Raleway/Raleway-Thin.ttf);
 	font-family: Raleway;
 }
-
+@font-face {
+	src: url(../fonts/fontawesome/fontawesome-webfont.ttf);
+	font-family: fontawesome;
+}
+@font-face {
+	src: url(../fonts/fontawesome/fontawesome-webfont.woff);
+	font-family: fontawesome;
+}
+@font-face {
+	src: url(../fonts/fontawesome/fontawesome-webfont.woff2);
+	font-family: fontawesome;
+}
 html, body {
 	height: 100%;
 }
@@ -55,7 +66,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #3D3C3C;
-    opacity: .92;
+    opacity: .72;
 }
 .theme.black h2{
 	color: #3f4244;
@@ -63,7 +74,32 @@ body {
 .theme.black p{
 	color: #444;
 }
+								/*scroll_btn start*/
 
+.scroll_top_btn {
+	position: fixed;
+	bottom: 27px;
+	right: 27px;
+	width: 50px;
+	height: 50px;
+	background-color: #A3A3A3;	
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	color: #252525;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+	z-index: 100;
+}
+.scroll_top_btn:hover {
+	background-color: #B7B7B7;
+	color: #535353;
+	
+}
+
+
+								/*scroll_btn end*/
 								/*header start*/
 								/*top line start*/
 .fixed {
@@ -481,6 +517,7 @@ body {
 .carousel_portfolio {
 	max-width: 469px;
 	background-color: #fff;
+	margin: 0 auto;
 }
 .carousel_portfolio img{
 	width: 400px;
@@ -997,10 +1034,12 @@ body {
 	border: none;
 	height: 31px;
 	background-color: transparent;
-	outline: none;
 	color: #fff;
 	border-bottom: 2px solid #fff;
 	padding-left: 20px;
+}
+.input:focus {
+	outline: none;	
 }
 .input_l_r_design {
 	position: relative;
@@ -1025,23 +1064,21 @@ body {
 	font-weight: 500;
 	transition: 0.2s ease all;
 	cursor: text;
+	pointer-events: none;
 }
 .input:focus ~ .input_label {
-	top: -15px;
-	font-size: 14px;
-	color: #00e1ff;
-	left: 15px;
+  top: -15px;
+  font-size: 14px;
+  color: #00e1ff;
+  left: 15px;
 }
+
 .input:required:valid ~ .input_label {
 	top: -15px;
-	font-size: 14px;
-	color: #00e1ff;
-	left: 15px;
+  font-size: 14px;
+  color: #00e1ff;
+  left: 15px;
 }
-/*.input:invalid:not(:focus):not(:placeholder-shown) ~ .input_label{
-      color: red;
-      top: -15px;		/*недовалидность*/
-    }*/
 .input_design {
   position: relative;
   display: block;
@@ -1092,8 +1129,7 @@ body {
 							/*section contact end*/
 							/*section map start*/
 .s_map_wrap {
-	background-image: url(../img/map.jpg);
-	-webkit-background-size: cover;
+	background-image: url(../img/map2.jpg);
 	background-size: cover;
 	padding-top: 127px;
 	padding-bottom: 112px;
@@ -1225,6 +1261,12 @@ body {
 	.screen_img:before {
 		display: none;
 	}
+	.services_character {
+		padding-bottom: 20px;
+	}
+	.static_character {
+		padding-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.active_nav {
@@ -1273,6 +1315,9 @@ body {
 	}
 
 	/*адаптивное меня конец*/
+	.logo {
+		padding-left: 20px;
+	}
 	.title h1 {
 		font-size: 37px;
 	}
@@ -1379,6 +1424,9 @@ body {
 	.res_btn {
 		white-space: normal;
 	}
+	.res_btn .button a {
+  		padding: 15px 18px 14px 18px;
+	}
 	.filter_portfolio {
 		margin-bottom: 0;
 	}
@@ -1400,6 +1448,12 @@ body {
 	}
 	.screen_img img {
 		width: 100%;
+	}
+	.scroll_top_btn {
+		opacity: 0.5;
+	}
+	.scroll_top_btn:hover {
+		opacity: 1;
 	}
 }
 @media only screen and (max-width: 320px) {

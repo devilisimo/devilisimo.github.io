@@ -9,6 +9,22 @@ function myFunction() {
 	}
 };
 
+$(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+            $('.scroll_top_btn').fadeIn();
+        } else {
+            $('.scroll_top_btn').fadeOut();
+        }
+    });
+    $('.scroll_top_btn').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 900);
+        return false;
+    });
+});
+
 //открыть/скрыть адаптивное фиксированное меню
 window.onload = function () {
 	var menu = document.querySelector('.show_btn');
